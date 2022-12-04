@@ -370,7 +370,7 @@ input[type="radio"]+label+input[type="radio"]+label { margin-left:20px; }
 	#gnb { width:242px; height:100%; position:fixed; left:-242px; top:0; float:none; margin:0; background:url('../images/bgMenu.png') left bottom no-repeat #fff; background-size:100% auto; border-right:5px solid #000; z-index:20; transition:all .5s; }
 	#gnb ul { width:201px; margin:0 auto; padding-top:123px; }
 	#gnb ul li { float:none; margin:0; text-align:center; }
-	#gnb ul li+li { margin-top:30px; }
+	#gnb ul li+li { margin-top:14px; }
 	#gnb ul li a { height:47px; line-height:47px; font-size:32px; }
 	#gnb .btnClose { width:29px; height:29px; display:block; position:absolute; right:15px; top:13px; background:url('../images/btnClose.png') center center no-repeat; background-size:29px auto; font-size:0; text-indent:-99999px; }
 
