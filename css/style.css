@@ -192,7 +192,7 @@ input[type="radio"]+label+input[type="radio"]+label { margin-left:20px; }
 .pageAni .char.char4 img { transition-delay:1.6s; }
 .pageAni .char.char5 img { transition-delay:1.8s; }
 
-.swiper-slide-active .pageAni { bottom:0; opacity:1; }
+.swiper-slide-active .pageAni { bottom:-72px; opacity:1; }
 .swiper-slide-active .pageAni .char:before { transform:scale(1); }
 .swiper-slide-active .pageAni .char.char0 { margin-left:-617px; opacity:1; }
 .swiper-slide-active .pageAni .char.heart { animation:.5s heartBounce 2s ease-in-out; opacity:1; }
@@ -267,17 +267,14 @@ input[type="radio"]+label+input[type="radio"]+label { margin-left:20px; }
 .boxInnerSlide { position:relative; overflow:hidden; z-index:5; }
 .boxInnerSlide .boxContSlide { display:flex;  align-items:center; flex-direction:row-reverse; }
 .boxInnerSlide .boxContSlide .txt { width:422px; padding-left:50px; color:#fff; }
-.boxInnerSlide .boxContSlide .txt h6,
-.boxInnerSlide.unset .boxContSlide .txt h6 { margin-bottom:25px; font-size:35px; font-weight:700; transition:all .5s .5s; opacity:0; }
-.boxInnerSlide .boxContSlide .txt h3,
-.boxInnerSlide.unset .boxContSlide .txt h3 { margin-bottom:28px; font-size:52px; font-weight:700; transition:all .5s .8s; opacity:0; }
-.boxInnerSlide .boxContSlide .txt p,
-.boxInnerSlide.unset .boxContSlide .txt p { font-size:22px; font-weight:300; color:#fff; transition:all .5s 1.1s; opacity:0; }
+.boxInnerSlide .boxContSlide .txt h6 { margin-bottom:25px; font-size:35px; font-weight:700; }
+.boxInnerSlide .boxContSlide .txt h3 { margin-bottom:28px; font-size:52px; font-weight:700; }
+.boxInnerSlide .boxContSlide .txt p { font-size:22px; font-weight:300; color:#fff; }
 .boxInnerSlide .boxContSlide .imgGroup { width:582px; margin-left:30px; position:relative; }
 .boxInnerSlide .boxContSlide .imgGroup .main,
-.boxInnerSlide.unset .boxContSlide .imgGroup .main { width:487px; position:relative; z-index:5; opacity:0; transition:all .5s 1.5s; }
+.boxInnerSlide.unset .boxContSlide .imgGroup .main { width:487px; position:relative; z-index:5; opacity:0; transition:all .5s .5s; }
 .boxInnerSlide .boxContSlide .imgGroup .sub,
-.boxInnerSlide.unset .boxContSlide .imgGroup .sub { width:432px; position:absolute; left:50px; top:50%; transform:translateY(-50%) scale(1.1); opacity:0; transition:all .5s 1.8s; z-index:1; }
+.boxInnerSlide.unset .boxContSlide .imgGroup .sub { width:432px; position:absolute; left:50px; top:50%; transform:translateY(-50%) scale(1.1); opacity:0; transition:all .5s .8s; z-index:1; }
 .boxInnerSlide .swiper-button-next,
 .boxInnerSlide .swiper-button-prev,
 .boxInnerSlide.unset .swiper-button-next,
@@ -285,28 +282,16 @@ input[type="radio"]+label+input[type="radio"]+label { margin-left:20px; }
 .boxInnerSlide .swiper-button-next { margin-left:538px; background-image:url('../images/btnSlideNext.png'); }
 .boxInnerSlide .swiper-button-prev { margin-left:-600px; background-image:url('../images/btnSlidePrev.png'); }
 
-.boxInnerSlide .swiper-slide-active .txt h6,
-.boxInnerSlide .swiper-slide-active .txt h3,
-.boxInnerSlide .swiper-slide-active .txt p,
 .boxInnerSlide .swiper-slide-active .imgGroup .main { opacity:1; }
 .boxInnerSlide .swiper-slide-active .imgGroup .sub { opacity:.7; left:150px; transform:translateY(-50%) scale(1); }
 
 .boxInnerSlide.is--active .swiper-button-next,
 .boxInnerSlide.is--active .swiper-button-prev { opacity:1; }
 
-.boxInnerSlide .swiper-slide-prev .txt h6,
-.boxInnerSlide .swiper-slide-prev .txt h3,
-.boxInnerSlide .swiper-slide-prev .txt p,
 .boxInnerSlide .swiper-slide-prev .imgGroup .main,
 .boxInnerSlide .swiper-slide-prev .imgGroup .sub,
-.boxInnerSlide .swiper-slide-next .txt h6,
-.boxInnerSlide .swiper-slide-next .txt h3,
-.boxInnerSlide .swiper-slide-next .txt p,
 .boxInnerSlide .swiper-slide-next .imgGroup .main,
 .boxInnerSlide .swiper-slide-next .imgGroup .sub { transition-delay: unset; }
-.boxInnerSlide.unset .txt h6,
-.boxInnerSlide.unset .txt h3,
-.boxInnerSlide.unset .txt p,
 .boxInnerSlide.unset .imgGroup .main,
 .boxInnerSlide.unset .imgGroup .sub,
 .boxInnerSlide.unset .swiper-button-next,
@@ -368,10 +353,13 @@ input[type="radio"]+label+input[type="radio"]+label { margin-left:20px; }
 	.pc { display:none !important; }
 	.mo { display:block !important; }
 
-	#header h1 { width:95px; height:40px; margin:16px auto 0; float:none; background-image:url('../images/logo_mo.png'); }
+	.mainWrap .swiper-slide.page4 .bg { background-image:url('../images/bg4_mo.jpg'); }
+
+	#header { height:50px; }
+	#header h1 { width:75px; height:31px; margin:10px auto 0; float:none; background-image:url('../images/logo_mo.png'); }
 	#header .lang { width:auto; right:0; top:0; }
-	#header .lang .btnLang { width:73px; height:70px; display:block; background:url('../images/iconGlobal_mo.png') center center no-repeat; background-size:23px auto; font-size:0; text-indent:-99999px; }
-	#header .lang ul { width:72px; height:0; position:absolute; right:10px; top:55px; border-radius:11px; }
+	#header .lang .btnLang { width:73px; height:50px; display:block; background:url('../images/iconGlobal_mo.png') center center no-repeat; background-size:23px auto; font-size:0; text-indent:-99999px; }
+	#header .lang ul { width:72px; height:0; position:absolute; right:10px; top:40px; border-radius:11px; }
 	#header .lang ul:before { display:none; }
 	#header .lang ul:after { display:none; }
 	#header .lang ul li a { height:30px; padding-left:20px; line-height:30px; }
@@ -390,9 +378,9 @@ input[type="radio"]+label+input[type="radio"]+label { margin-left:20px; }
 
 	#gnb ul li.active a { height:52px; border-bottom:0; background:url('../images/bgGnb_mo.png') center center no-repeat; background-size:100% auto; line-height:51px; }
 
-	#btnGnb { width:66px; height:70px; position:absolute; left:0; top:0; display:block; background:url('../images/btnGnb.png') center center no-repeat; background-size:18px auto; font-size:0; text-indent:-99999px; }
+	#btnGnb { width:66px; height:50px; position:absolute; left:0; top:0; display:block; background:url('../images/btnGnb.png') center center no-repeat; background-size:18px auto; font-size:0; text-indent:-99999px; }
 
-	#container { padding:70px 0 0; }
+	#container { padding:50px 0 0; }
 
 	.mainPage { display:none; }
 
@@ -428,7 +416,7 @@ input[type="radio"]+label+input[type="radio"]+label { margin-left:20px; }
 	.pageAni .char.heart { display:none; }
 
 	.boxStory { margin-top:-30px; text-align:center; }
-	.boxStory .top { display:inline-block; padding:0 26px; margin-bottom:30px; font-size:35px; line-height:1.2; }
+	.boxStory .top { display:inline-block; padding:0 26px; margin-bottom:16px; font-size:30px; line-height:1.2; }
 	.boxStory .top:before,
 	.boxStory .top:after { width:23px; height:24px; position:absolute; bottom:10px; margin:0; }
 	.boxStory .top:before { left:0; }
@@ -436,16 +424,17 @@ input[type="radio"]+label+input[type="radio"]+label { margin-left:20px; }
 	.boxStory .top span { display:block; }
 	.boxStory .cont { display:block; }
 	.boxStory .cont .thumb { width:auto; height:auto; margin:0; }
-	.boxStory .cont .txt { width:auto; margin-top:34px; }
-	.boxStory .cont .txt h6 { height:33px; margin-bottom:16px; line-height:33px; font-size:22px; }
-	.boxStory .cont .txt h3 { margin-bottom:16px; font-size:25px; line-height:32px; }
+	.boxStory .cont .txt { width:auto; margin-top:22px; }
+	.boxStory .cont .txt h6 { height:23px; padding:0 9px; margin-bottom:10px; line-height:23px; font-size:22px; }
+	.boxStory .cont .txt h3 { margin-bottom:10px; font-size:23px; line-height:29px; }
 	.boxStory .cont .txt h3 span.line { border-bottom:0; }
-	.boxStory .cont .txt p { width:300px; margin:0 auto; font-size:16px; }
+	.boxStory .cont .txt p { width:300px; margin:0 auto; font-size:13px; }
 	
 
-	.boxRegister h3 { margin-bottom:12px; font-size:28px; line-height:34px; }
-	.boxRegister .boxInput { width:360px; margin:0 auto; background-image:url('../images/bgRegister_mo.png'); }
-	.boxRegister .boxInput .inner { width:auto; padding:45px 49px 0; }
+	.boxRegister h3 { margin-bottom:8px; font-size:24px; line-height:30px; }
+	.boxRegister p { margin-bottom:0; font-size:14px; line-height:22px; }
+	.boxRegister .boxInput { width:360px; margin:-10px auto 0; background-image:url('../images/bgRegister_mo.png'); }
+	.boxRegister .boxInput .inner { width:auto; padding:35px 49px 0; }
 	.boxRegister .boxInput .check { margin-bottom:16px; }
 	.boxRegister .boxInput .check label { height:auto; padding-left:0; padding-top:30px; }
 	.boxRegister .boxInput .check input[type="radio"]:checked+label:after { left:50%; top:5px; margin-top:0; margin-left:-7px; }
@@ -454,23 +443,23 @@ input[type="radio"]+label+input[type="radio"]+label { margin-left:20px; }
 	.boxRegister .boxInput .check label.chkAppStore img { width:85px; }
 	.boxRegister .boxInput .check .input+.input { margin-left:34px; }
 	.boxRegister .boxInput .check .input+.input:before { display:none; }
+	.boxRegister .boxInput .ps { margin-top:8px; }
+	.boxRegister .boxInput .ps .agree input[type="checkbox"] { width:18px; height:18px; }
+	.boxRegister .boxInput .btnArea { margin-top:20px; }
 	.boxRegister .boxInput .btn { width:169px; height:54px; }
 	.boxRegister .boxInput .btn span { width:165px; height:54px; line-height:54px; }
 	.boxRegister .boxNotice a { width:360px; height:124px; background-image:url('../images/btnRegister_mo.png'); }
 	
-	.swiper-slide-active .boxRegister .boxInput { height:349px; }
+	.swiper-slide-active .boxRegister .boxInput { height:327px; }
 
 	.boxInnerSlide .boxContSlide { display:block; }
-	.boxInnerSlide .boxContSlide .imgGroup { width:auto; margin:0 0 15px; }
-	.boxInnerSlide .swiper-slide .imgGroup .main { width:243px; margin:0 auto; transition-delay:.5s; }
+	.boxInnerSlide .boxContSlide .imgGroup { width:auto; margin:0 0 6px; }
+	.boxInnerSlide .swiper-slide .imgGroup .main { width:208px; margin:0 auto; transition-delay:.5s; }
 	.boxInnerSlide .swiper-slide .imgGroup .sub { display:none; }
 	.boxInnerSlide .boxContSlide .txt { width:auto; padding:0 18px; text-align:center; }
-	.boxInnerSlide .boxContSlide .txt h6,
-	.boxInnerSlide.unset .boxContSlide .txt h6 { margin-bottom:18px; font-size:16px; transition-delay:1s; }
-	.boxInnerSlide .boxContSlide .txt h3,
-	.boxInnerSlide.unset .boxContSlide .txt h3 { margin-bottom:15px; font-size:28px; transition-delay:1.3s; }
-	.boxInnerSlide .boxContSlide .txt p,
-	.boxInnerSlide.unset .boxContSlide .txt p { font-size:13px; transition-delay:1.6s; }
+	.boxInnerSlide .boxContSlide .txt h6 { margin-bottom:10px; font-size:16px; }
+	.boxInnerSlide .boxContSlide .txt h3 { margin-bottom:10px; font-size:26px; }
+	.boxInnerSlide .boxContSlide .txt p { font-size:13px; }
 	.boxInnerSlide .swiper-button-next,
 	.boxInnerSlide .swiper-button-prev,
 	.boxInnerSlide.unset .swiper-button-next,
