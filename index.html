@@ -180,7 +180,7 @@
 					</div>
 				</div>
 				<div class="boxMouse">
-					<div class="bubble">사전 등록 하러 가기</div>
+					<div class="bubble">사전 등록 진행 중!</div>
 					<div class="mouse"></div>
 					<div class="arrow"></div>
 				</div>
@@ -323,8 +323,10 @@
 				$(".mainPage a:eq(" + idx + ")").addClass("active");
 
 				if(idx == 0){
-					$(".boxMouse .bubble").show();
+					$(".boxMouse .bubble").show().text("사전 등록 진행 중!");
 				}else if(idx == 1){
+					$(".boxMouse .bubble").show().text("사전 등록하러 가기!");
+
 					var winW = $(window).outerWidth();
 					if(winW < 768){
 						$(".boxMouse .bubble").hide();
